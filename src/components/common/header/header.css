@@ -105,13 +105,16 @@ input:focus {
    
 }
 
-.headerContainer .headerCategoryContainer{
-    background-color: red;
-    height: 28px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+.headerContainer .headerCategoryContainer {
+  background-color: red;
+  height: 28px;
+  display: flex;
+  overflow: auto;
+  column-gap: 5px;
+  align-items: center;
+}
+.headerContainer .headerCategoryContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .headerCategoryContainer .categoryItem{
