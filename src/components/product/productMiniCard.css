@@ -1,0 +1,19 @@
+.imageMiniCard{
+    width:70px;
+    height:70px;
+    border:1px solid black;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.imageMiniCard:hover{
+    width:70px;
+    height:70px;
+    border:2px solid red;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.imageMiniCard img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,116 @@
+.pd{
+    /* padding: 10px; */
+}
+.productDetailsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    /* min-width: 500px; */
+}
+
+.productDetailsImage{
+    display: flex;
+    justify-content: center;
+}
+
+.productDetailsImage .productImageList{
+    margin-right: 4px;
+    min-height: 450px;
+    min-width: 80px;
+    border: 1px gray solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productDetailsImage .productfullImage{
+    min-width: 300px;
+}
+
+.productDetailsImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.productDescription{
+
+    width: 400px;
+    flex-grow: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+
+.productDescription .productTitle{
+    color: gray;
+    font-size: x-large;
+    font-weight: 500;
+    
+}
+
+.productDescription .productPrice span{
+    color: gray;
+    margin-right: 8px;
+    font-size: medium;
+    padding-top: 4px;
+    font-weight: 100;
+}
+.productDescription .productPrice{
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+.productDescription .productRating{
+    background-color: green;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 200;
+    font-size: small;
+}
+.productDescription .productRating .stars{
+    color: #FFD700;
+    width: fit-content;
+}
+.productDescription .description{
+    margin-top: 20px;
+}
+.productDescription .description h3{
+color: gray;    
+}
+
+.productDescription .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productDescription .buttons button{
+    width: 49.5%;
+    background-color: #eb7d16;
+    border: none;
+    height: 40px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sameCategoryProduct h3{
+    color: #eb7d16;
+    letter-spacing: 2px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.sameCategoryProduct{
+    margin-top: 100px;
+    background-color:#ffe0c4;
+}

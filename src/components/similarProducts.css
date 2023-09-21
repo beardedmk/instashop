@@ -1,0 +1,12 @@
+.similarItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button:hover{
+    color: #ff0000;
+    background-color: white;
+    transition: 1s;
+    border: 1px solid #ff0000;
+}

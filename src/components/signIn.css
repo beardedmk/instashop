@@ -1,0 +1,53 @@
+.signInContainer{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    color: gray;
+}
+
+.signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffd1a5;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.signInForm{
+    display: flex;
+    flex-direction:column;
+    width: 200px;
+}
+
+.signInForm input{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.signInForm button{
+    margin-top: 10px;
+    padding: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: none;
+    height: 30px;
+}
+
+.nameError{
+color: red;font-size: small;
+}
+.emailError{color: red;font-size: small;}
+.passwordError{color: red;font-size: small;}
+
+button:hover{
+    color: #ff0000;
+    background-color: white;
+    transition: 1s;
+    border: 1px solid #ff0000;
+}
