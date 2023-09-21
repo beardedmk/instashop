@@ -20,7 +20,10 @@ function CartItem({ item }) {
       <div className="cartItemImage">
         <img src={thumbnail} />
       </div>
-      <div className="cartItemTitle">{title}</div>
+      {console.log()}
+      <div className="cartItemTitle">
+        {title.length > 12 ? title.slice(0, 14) + "..." : title}
+      </div>
       <div className="priceContainer">
         <div className="counter">
           <button onClick={() => addCartStore(item)}>+</button>
