@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import Header from "../components/common/header/Header";
 import BannerSlider from "../components/slider/BannerSlider";
 import ProductItemCart from "../components/product/ProductItemCart";
@@ -18,11 +18,21 @@ import "./home.css";
 function Home() {
   // const images = [laptop, samsung, women];
 
+  const sliderMemo = useMemo(() => {
+    return (
+      <>
+        <BannerSlider />
+        <ProductList />
+      </>
+    );
+  });
+
   return (
-    <>
-      <BannerSlider />
-      <ProductList />
-    </>
+    // <>
+    //   <BannerSlider />
+    //   <ProductList />
+    // </>
+    sliderMemo
   );
 }
 
