@@ -10,7 +10,7 @@ import BuyConfirmation from "../../components/BuyConfirmation";
 
 function ProductDetails() {
   const product = useSelector(
-    (state) => state.productStore.productReducer.singleProductDetails
+    (state) => state.productStore.productReducer.singleProductDetails,
   );
   const dispatch = useDispatch();
   const params = useParams();
@@ -55,7 +55,7 @@ function ProductDetails() {
                 return (
                   <div
                     key={`${productId}+${Math.random()}`}
-                    onClick={() => {
+                    onMouseEnter={() => {
                       setDetailsImage(image);
                     }}
                   >
