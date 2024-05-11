@@ -1,7 +1,7 @@
 .productsListContainer {
   display: flex;
   justify-content: center;
-  background-color: #ffd1a5;
+  /* background-color: #ffd1a5; */
 }
 
 .product {

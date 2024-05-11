@@ -2,8 +2,9 @@
   background-color: white;
   width: 200px;
   height: 250px;
-  padding: 2px;
+  /* padding: 2px; */
   margin: 5px;
+  border: 1px solid grey;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,6 +41,10 @@
   margin: 2px 0;
 }
 
+.productPrice .printedPrice {
+  display: flex;
+}
+
 .productPrice .markedPrice {
   color: gray;
   text-decoration: line-through;
@@ -49,6 +54,7 @@
   font-size: x-small;
   background-color: green;
   color: white;
+  margin-left: 10px;
   padding: 4px;
   border-radius: 4px;
   display: flex;
@@ -77,4 +83,10 @@ button:hover {
   background-color: white;
   transition: 1s;
   border: 1px solid #ff0000;
+}
+
+@media only screen and (max-width: 728px) {
+  .ProductItemContainer {
+    width: 300px;
+  }
 }
