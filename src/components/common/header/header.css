@@ -24,11 +24,13 @@
   border-radius: 2px;
 }
 
-.brandContainer .brandName {
+.brandContainer .brandName img {
   padding-left: 10px;
-  color: white;
-  font-size: medium;
-  font-family: cursive;
+  width: 180px;
+  height: auto;
+  /* color: white; */
+  /* font-size: medium; */
+  /* font-family: cursive; */
   cursor: pointer;
 }
 

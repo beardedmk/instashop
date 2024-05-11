@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchAllProductCategories } from "../../../store/productsCategoriesSlice";
 import user from "../../../assets/images/user.png";
 import cart from "../../../assets/images/cart.png";
+import logo from "../../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useNavigate, useSearchParams } from "react-router-dom";
@@ -67,7 +68,8 @@ function Header() {
                 navigate("/");
               }}
             >
-              <h1>Instashop</h1>
+              {/* <h1>Instashop</h1> */}
+              <img src={logo} />
             </div>
           </div>
           <div className="searchBar">
