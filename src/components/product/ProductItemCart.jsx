@@ -52,8 +52,10 @@ function ProductItemCart({ product }) {
       <div>
         <div className="productDetails">
           <div className="productPrice">
-            <div className="markedPrice">₹{product.price}</div>
-            <div className="discount">{product.discountPercentage}% off</div>
+            <div className="printedPrice">
+              <div className="markedPrice">₹{product.price}</div>
+              <div className="discount">{product.discountPercentage}% off</div>
+            </div>
             <div className="sellingPrice">
               ₹{priceAfterDiscount(product.price, product.discountPercentage)}
             </div>
