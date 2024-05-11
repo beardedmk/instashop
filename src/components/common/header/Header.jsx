@@ -14,10 +14,10 @@ import { NavLink, useNavigate, useSearchParams } from "react-router-dom";
 function Header() {
   const dispatch = useDispatch();
   const categories = useSelector(
-    (state) => state.productStore.productsCategoriesSliceReducer.categories
+    (state) => state.productStore.productsCategoriesSliceReducer.categories,
   );
   const totalCartItems = useSelector(
-    (state) => state.cartStore.cartItems.length
+    (state) => state.cartStore.cartItems.length,
   );
   const navigate = useNavigate();
 
@@ -26,7 +26,7 @@ function Header() {
   const fetchCategory = useMemo(() => {
     return () => {
       dispatch(
-        fetchAllProductCategories("https://dummyjson.com/products/categories")
+        fetchAllProductCategories("https://dummyjson.com/products/categories"),
       );
     };
   }, [dispatch]);
