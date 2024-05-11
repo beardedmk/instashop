@@ -4,6 +4,7 @@
   justify-content: space-around;
   overflow-x: auto;
   color: #eb7d16;
+  cursor: pointer;
 }
 
 .singleCategory {
