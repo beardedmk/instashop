@@ -1,21 +1,21 @@
-.productsListContainer{
-    display: flex;
-    justify-content: center;
-    background-color: #ffd1a5;
-   }
-
-.product{
-    flex-grow: 2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: fit-content;
-    max-width: 920px;
+.productsListContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #ffd1a5;
 }
 
-button:hover{
-    color: #ff0000;
-    background-color: white;
-    transition: 1s;
-    border: 1px solid #ff0000;
+.product {
+  flex-grow: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+  /* max-width: 1020px; */
+}
+
+button:hover {
+  color: #ff0000;
+  background-color: white;
+  transition: 1s;
+  border: 1px solid #ff0000;
 }
