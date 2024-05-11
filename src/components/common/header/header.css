@@ -74,11 +74,9 @@ input:focus {
   /* max-width: 100px; */
 }
 
-.headerNavbarContainer .cart {
+.headerNavbarContainer .cart img {
   width: 32px;
   height: 30px;
-  color: white;
-  font-size: x-large;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -87,6 +85,7 @@ input:focus {
 
 .cart .cartNumber {
   background-color: #ff0000;
+  color: white;
   font-size: small;
   font-weight: bolder;
   width: 12px;
@@ -97,8 +96,9 @@ input:focus {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-left: 18px;
-  margin-top: -25px;
+  margin-left: 45px;
+  margin-top: -38px;
+  cursor: pointer;
 }
 .headerNavbarContainer .avatar {
   width: 30px;
