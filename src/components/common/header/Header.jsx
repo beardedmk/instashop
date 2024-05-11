@@ -2,13 +2,9 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import "./header.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllProductCategories } from "../../../store/productsCategoriesSlice";
-
+import user from "../../../assets/images/user.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCartShopping,
-  faSearch,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useNavigate, useSearchParams } from "react-router-dom";
 
 function Header() {
@@ -85,14 +81,14 @@ function Header() {
               <FontAwesomeIcon icon={faSearch} />
             </div>
           </div>
-          <div style={{ display: "flex" }}>
-            <div className="cart" onClick={() => handleCartClick()}>
-              <FontAwesomeIcon icon={faCartShopping} />
-              <span className="cartNumber">{totalCartItems}</span>
-            </div>
-            <div className="avatar" onClick={() => handleUserClick()}>
-              <FontAwesomeIcon icon={faUser} />
-            </div>
+          <div className="cartUserContainer">
+          <div className="avatar" onClick={() => handleUserClick()}>
+            <img src={user} alt="user" />
+          </div>
+          <div className="cart" onClick={() => handleCartClick()}>
+            <FontAwesomeIcon icon={faCartShopping} />
+            <span className="cartNumber">{totalCartItems}</span>
+          </div>
           </div>
         </div>
         <div className="headerCategoryContainer">
