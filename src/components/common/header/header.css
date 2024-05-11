@@ -1,108 +1,116 @@
-.headerContainer{
-    height: 100px;
-    background-color: #eb7d16;
+.headerContainer {
+  height: 100px;
+  background-color: #eb7d16;
 }
 
-.headerContainer .headerNavbarContainer{
-    /* background-color: red; */
-    height: 72px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.headerContainer .headerNavbarContainer {
+  /* background-color: red; */
+  height: 72px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.headerNavbarContainer .brandContainer{
-    display: flex;
-    align-items: center;
+.headerNavbarContainer .brandContainer {
+  display: flex;
+  align-items: center;
 }
 
-.brandContainer .line{
-    height: 3px;
-    width: 25px;
-    background-color: whitesmoke;
-    margin: 3px 0;
-    border-radius:2px
+.brandContainer .line {
+  height: 3px;
+  width: 25px;
+  background-color: whitesmoke;
+  margin: 3px 0;
+  border-radius: 2px;
 }
 
-.brandContainer .brandName{
-    padding-left: 10px;
-    color: white;
-    font-size: medium;
-    font-family: cursive;
-    cursor: pointer;
+.brandContainer .brandName {
+  padding-left: 10px;
+  color: white;
+  font-size: medium;
+  font-family: cursive;
+  cursor: pointer;
 }
 
-.headerNavbarContainer .searchBar{
-    background-color: white;
-    min-width: 10vw;
-    height: 30px;
-    border-radius:8px;
-    display: flex;
-    /* flex-grow: 8; */
-    flex-shrink: 2;
-    margin-left: 12px;
+.headerNavbarContainer .searchBar {
+  background-color: white;
+  min-width: 10vw;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  /* flex-grow: 8; */
+  flex-shrink: 2;
+  margin-left: 12px;
 }
 
-.searchBar input{
-    background-color:transparent;
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    border-radius:8px;
-    padding:0 2px;
+.searchBar input {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 2px;
 }
 input:focus {
-    caret-color: red;
-  }
-
-.searchBar .searchLogo{
-    background-color: aliceblue;
-    color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    border-radius: 8px;   
-    cursor: pointer;
+  caret-color: red;
 }
 
-.headerNavbarContainer .cart{
-    width: 32px;
-    height: 30px;
-    color: white;
-    font-size: x-large;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin: 0 20px;
+.searchBar .searchLogo {
+  background-color: aliceblue;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.cart .cartNumber{
-    background-color: #ff0000;
-    font-size: small;
-    font-weight: bolder;
-    width: 12px;
-    height: 15px;
-    padding: 2px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin-left: 18px;
-    margin-top: -25px;
+.cartUserContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
 }
-.headerNavbarContainer .avatar{
-    width: 30px;
-    height: 30px;
-    color: white;
-    font-size: x-large;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-   
+
+.headerNavbarContainer .cart {
+  width: 32px;
+  height: 30px;
+  color: white;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.cart .cartNumber {
+  background-color: #ff0000;
+  font-size: small;
+  font-weight: bolder;
+  width: 12px;
+  height: 15px;
+  padding: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: 18px;
+  margin-top: -25px;
+}
+.headerNavbarContainer .avatar {
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 35px;
 }
 
 .headerContainer .headerCategoryContainer {
@@ -117,15 +125,15 @@ input:focus {
   display: none;
 }
 
-.headerCategoryContainer .categoryItem{
-    width: fit-content;
-    margin: 0 5px;
-    color: white;
-    font-size: small;
-    cursor: pointer;
-    text-decoration: none;
+.headerCategoryContainer .categoryItem {
+  width: fit-content;
+  margin: 0 5px;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.categoryItem:active{
-    color: black;
+.categoryItem:active {
+  color: black;
 }
