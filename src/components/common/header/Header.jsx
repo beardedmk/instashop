@@ -97,14 +97,6 @@ function Header() {
         </div>
         <div className="headerCategoryContainer">
           {categories.slice(0, 10).map((category) => (
-            // <div
-            //   className="categoryItem"
-            //   key={category}
-            //   onClick={() => handleCategoryClick(category)}
-            // >
-            //   {category}
-            // </div>
-
             <NavLink
               to={`/category?cat=${category}`}
               className="categoryItem"
