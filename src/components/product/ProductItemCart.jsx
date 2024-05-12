@@ -7,19 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 function ProductItemCart({ product }) {
   const dispatch = useDispatch();
-
-  // const product = useSelector(
-  //   (state) => state.productStore.productReducer.product
-  // );
-  // const allProducts = useSelector(
-  //   (state) => state.productStore.allProductsReducer.allProducts
-  // );
-
-  // useEffect(() => {
-  //   dispatch(fetchSingleProduct());
-  //   // dispatch(fetchAllProducts());
-  // }, [dispatch]);
-
   const navigate = useNavigate();
 
   const priceAfterDiscount = (mp, ds) => {
