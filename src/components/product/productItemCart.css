@@ -29,6 +29,7 @@
   font-family: monospace;
   font-size: large;
   font-weight: bolder;
+  padding: 0 2px;
   color: #eb7d16;
 }
 
@@ -37,6 +38,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 2px 0;
+  padding: 0 2px;
 }
 
 .productPrice .printedPrice {
