@@ -1,17 +1,33 @@
 .categoryContainer {
-  margin: 20px 10px 10px 5px;
+  padding: 20px 10px 10px 5px;
   display: flex;
   justify-content: space-around;
   overflow-x: auto;
   color: #eb7d16;
-  cursor: pointer;
 }
 
 .singleCategory {
   margin: 2px;
-  padding: 5px;
+  padding: 10px 2px 0 0;
   max-width: 80px;
+  min-width: 80px;
   text-align: center;
+  cursor: pointer;
+}
+
+.singleCategory:hover {
+  border-radius: 20%;
+  width: auto;
+  box-shadow: 0.2px 0.2px 5px #eb7d16;
+}
+
+.singleCategory {
+  text-decoration: none;
+  color: inherit;
+}
+
+.singleCategory .categoryName {
+  font-size: small;
 }
 
 .categoryContainer::-webkit-scrollbar {

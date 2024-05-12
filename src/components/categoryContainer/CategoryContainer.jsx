@@ -7,59 +7,63 @@ import homeDecoration from "../../assets/images/living-room.png";
 import perfume from "../../assets/images/perfume-spray.png";
 import womenClothes from "../../assets/images/womenClothes.png";
 import skinCares from "../../assets/images/skinCares.png";
+import { NavLink } from "react-router-dom";
 
 function CategoryContainer() {
   return (
     <>
       <div className="categoryContainer">
-        <div className="singleCategory">
+        <NavLink to={`/category?cat=furniture`} className="singleCategory">
           <div className="categoryImage">
             <img src={furniture} alt="" srcSet="" />
           </div>
           <div className="categoryName">Furniture</div>
-        </div>
-        <div className="singleCategory">
+        </NavLink>
+        <NavLink to={`/category?cat=skincare`} className="singleCategory">
           <div className="categoryImage">
             <img src={skinCares} alt="" srcSet="" />
           </div>
           <div className="categoryName">Skin Cares</div>
-        </div>
-        <div className="singleCategory">
+        </NavLink>
+        <NavLink to={`/category?cat=laptops`} className="singleCategory">
           <div className="categoryImage">
             <img src={laptop} alt="" srcSet="" />
           </div>
           <div className="categoryName">Laptop</div>
-        </div>{" "}
-        <div className="singleCategory">
+        </NavLink>
+        <NavLink to={`/category?cat=smartphones`} className="singleCategory">
           <div className="categoryImage">
             <img src={smartphone} alt="" srcSet="" />
           </div>
           <div className="categoryName">Smartphone</div>
-        </div>{" "}
-        <div className="singleCategory">
+        </NavLink>{" "}
+        <NavLink to={`/category?cat=groceries`} className="singleCategory">
           <div className="categoryImage">
             <img src={groceries} alt="" srcSet="" />
           </div>
           <div className="categoryName">groceries</div>
-        </div>{" "}
-        <div className="singleCategory">
+        </NavLink>{" "}
+        <NavLink
+          to={`/category?cat=home-decoration`}
+          className="singleCategory"
+        >
           <div className="categoryImage">
             <img src={homeDecoration} alt="" srcSet="" />
           </div>
           <div className="categoryName">Home Decoration</div>
-        </div>{" "}
-        <div className="singleCategory">
+        </NavLink>{" "}
+        <NavLink to={`/category?cat=fragrances`} className="singleCategory">
           <div className="categoryImage">
             <img src={perfume} alt="" srcSet="" />
           </div>
           <div className="categoryName">Perfume</div>
-        </div>
-        <div className="singleCategory">
+        </NavLink>
+        <NavLink to={`/category?cat=womens-dresses`} className="singleCategory">
           <div className="categoryImage">
             <img src={womenClothes} alt="" srcSet="" />
           </div>
           <div className="categoryName">Women Clothes</div>
-        </div>
+        </NavLink>
       </div>
     </>
   );
