@@ -1,4 +1,4 @@
-import React, { useMemo, lazy, Suspense } from "react";
+import { useMemo, lazy, Suspense } from "react";
 const BannerSlider = lazy(() => import("../components/slider/BannerSlider"));
 import ProductList from "../components/product/ProductList";
 import CategoryContainer from "../components/categoryContainer/CategoryContainer";
@@ -14,15 +14,9 @@ function Home() {
         </Suspense>
       </>
     );
-  });
+  }, []);
 
-  return (
-    // <>
-    //   <BannerSlider />
-    //   <ProductList />
-    // </>
-    sliderMemo
-  );
+  return sliderMemo;
 }
 
 export default Home;

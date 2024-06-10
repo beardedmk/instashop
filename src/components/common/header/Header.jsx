@@ -37,10 +37,6 @@ function Header() {
     navigate("/cart");
   }
 
-  function handleCategoryClick(category) {
-    navigate(`/category?cat=${category}`);
-  }
-
   function performSearch(query) {
     navigate(`/search?q=${query}`);
   }
@@ -68,7 +64,6 @@ function Header() {
                 navigate("/");
               }}
             >
-              {/* <h1>Instashop</h1> */}
               <img src={logo} />
             </div>
           </div>
@@ -89,7 +84,6 @@ function Header() {
               <img src={user} alt="user" />
             </div>
             <div className="cart" onClick={() => handleCartClick()}>
-              {/* <FontAwesomeIcon icon={faCartShopping} /> */}
               <img src={cart} />
               <span className="cartNumber">{totalCartItems}</span>
             </div>
@@ -98,11 +92,11 @@ function Header() {
         <div className="headerCategoryContainer">
           {categories.slice(0, 10).map((category) => (
             <NavLink
-              to={`/category?cat=${category}`}
+              to={`/category?cat=${category.slug}`}
               className="categoryItem"
-              key={category}
+              key={category.name}
             >
-              {category}
+              {category.name}
             </NavLink>
           ))}
         </div>

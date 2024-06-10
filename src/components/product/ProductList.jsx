@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllProducts } from "../../store/allProductsSlice";
@@ -9,7 +8,7 @@ import loading from "../../assets/Loading_Spinner.svg";
 function ProductList() {
   const dispatch = useDispatch();
   const products = useSelector(
-    (state) => state.productStore.allProductsReducer.allProducts
+    (state) => state.productStore.allProductsReducer.allProducts,
   );
 
   useEffect(() => {

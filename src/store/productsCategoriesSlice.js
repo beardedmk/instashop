@@ -4,13 +4,9 @@ import axios from "axios";
 export const fetchAllProductCategories = createAsyncThunk(
   "allCategoriesThunk",
   async (URL) => {
-    try {
-      const response = await axios.get(URL);
-      return response.data;
-    } catch (error) {
-      throw error;
-    }
-  }
+    const response = await axios.get(URL);
+    return response.data;
+  },
 );
 
 const productCategoriesSlice = createSlice({
