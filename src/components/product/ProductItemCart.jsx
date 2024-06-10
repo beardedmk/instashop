@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
 import "./productItemCart.css";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchSingleProduct } from "../../store/productSlice";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/cartSlice";
 import { useNavigate } from "react-router-dom";
 
