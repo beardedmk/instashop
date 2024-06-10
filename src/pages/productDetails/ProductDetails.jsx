@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./productDetails.css";
 import ProductImageMiniCard from "../../components/product/ProductImageMiniCard";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,7 +6,6 @@ import SimilarProducts from "../../components/SimilarProducts";
 import { useNavigate, useParams } from "react-router-dom";
 import { fetchSingleProduct } from "../../store/productSlice";
 import { addToCart } from "../../store/cartSlice";
-import BuyConfirmation from "../../components/BuyConfirmation";
 
 function ProductDetails() {
   const product = useSelector(

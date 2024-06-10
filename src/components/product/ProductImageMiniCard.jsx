@@ -1,4 +1,3 @@
-import React from "react";
 import "./productMiniCard.css";
 
 function ProductImageMiniCard({ image }) {
