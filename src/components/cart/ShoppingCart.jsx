@@ -23,7 +23,8 @@ function ShoppingCart() {
         <div className="shoppingCart">
           <div className="priceColumn">
             <span>
-              Total price: <span style={{ color: `#d2691e` }}>₹{tPrice}</span>
+              Total price:{" "}
+              <span style={{ color: `#d2691e` }}>₹{tPrice.toFixed(2)}</span>
             </span>
             <button
               className="placeOrderButton"

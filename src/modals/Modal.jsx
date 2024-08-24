@@ -1,10 +1,8 @@
-import React from "react";
 import "./modal.css";
-
-function Modal(props) {
+function Modal({ children }) {
   return (
     <div className="modal-overlay">
-      <div className="modal">{props.children}</div>
+      <div className="modal">{children}</div>
     </div>
   );
 }

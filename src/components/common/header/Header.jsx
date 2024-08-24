@@ -11,6 +11,7 @@ import { NavLink, useNavigate, useSearchParams } from "react-router-dom";
 
 function Header() {
   const dispatch = useDispatch();
+  const [value, setValue] = useState("");
   const categories = useSelector(
     (state) => state.productStore.productsCategoriesSliceReducer.categories,
   );
@@ -39,14 +40,17 @@ function Header() {
 
   function performSearch(query) {
     navigate(`/search?q=${query}`);
+    setValue("");
+    searchRef.current.blur();
   }
   let debounce;
-  function handleSearchChange() {
+  function handleSearchChange(e) {
+    setValue(e.target.value);
     clearTimeout(debounce);
     debounce = setTimeout(() => {
       searchRef.current.value.trim() != "" &&
         performSearch(searchRef.current.value.trim());
-    }, 1500);
+    }, 4000);
   }
 
   function handleUserClick() {
@@ -61,7 +65,7 @@ function Header() {
             <div
               className="brandName"
               onClick={() => {
-                navigate("/");
+                navigate("");
               }}
             >
               <img src={logo} />
@@ -73,6 +77,7 @@ function Header() {
               name=""
               ref={searchRef}
               placeholder="Search..."
+              value={value}
               onChange={(e) => handleSearchChange(e)}
             />
             <div className="searchLogo">
