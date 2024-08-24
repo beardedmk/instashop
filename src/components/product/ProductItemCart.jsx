@@ -2,17 +2,21 @@ import "./productItemCart.css";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/cartSlice";
 import { useNavigate } from "react-router-dom";
+import Modal from "../../modals/Modal";
+import { useState } from "react";
 
 function ProductItemCart({ product }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
+  const [isModalVisible, setisModalVisible] = useState(false);
   const priceAfterDiscount = (mp, ds) => {
-    return ((mp * (100 - ds)) / 100).toFixed(2);
+    return (mp * (100 - ds)).toFixed(2);
   };
 
   function handleAddToCart(product) {
     dispatch(addToCart(product));
+    setisModalVisible(true);
+    setTimeout(() => setisModalVisible(false), 1000);
   }
 
   function handleCardClick(id) {
@@ -55,6 +59,12 @@ function ProductItemCart({ product }) {
           </button>
         </div>
       </div>
+
+      {isModalVisible && (
+        <Modal>
+          <p>Added to cart</p>
+        </Modal>
+      )}
     </div>
   );
 }
